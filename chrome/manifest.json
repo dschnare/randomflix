@@ -1,0 +1,11 @@
+{
+	"manifest_version": 2,
+	"name": "RandomFlix",
+	"version": "1.0.0",
+	"description": "RandomFlix is a Chrome extension that adds the capability to choose a random movie on Netflix.",
+	"content_scripts": [{
+		"matches": ["http://www.netflix.com/browse*", "http://www.netflix.com/title*", "http://www.netflix.com/Kids*", "http://www.netflix.com/kids*"],
+		"css": ["styles.css"],
+		"js": ["main.js"]
+	}]
+}

@@ -1,0 +1,31 @@
+.randomflix,
+.randomflix.is-hidden {
+	text-shadow: 0 0 0 transparent;
+	/* Reference: http://www.greywyvern.com/?post=337 */
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0ms ease-out 250ms, opacity 250ms ease-out 0ms, text-shadow 250ms ease-in 0ms;
+}
+
+.randomflix--heavy {
+	text-shadow: 0 0 16px rgba(255, 255, 255, 1);
+}
+
+#hd .randomflix--heavy {
+	text-shadow: 0 0 16px rgba(85, 85, 85, 1);
+}
+
+@media screen and (min-width: 749px) {
+	.randomflix {
+		visibility: visible;
+		opacity: 1;
+		transition-delay: 0ms;
+	}
+}
+
+@media screen and (max-width: 945px) {
+	#hd .randomflix {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
