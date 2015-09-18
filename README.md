@@ -6,9 +6,9 @@ This extension adds a new `Random` button in the main navigation bar that will c
 Kids section then the movie will play immediately without highlighting it (this is a shortcomming of the Netflix front-end scripting).
 
 
-# Browser Support
+# Install
 
-**Currently this extension only supports Chrome.** To install
+**Chrome**
 
 1. Download or clone the repo.
 2. Open Chrome and go to `chrome://extensions`
