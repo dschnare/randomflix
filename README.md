@@ -3,7 +3,7 @@
 RandomFlix is a browser extension that adds the capability to choose a random movie on Netflix.
 
 This extension adds a new `Random` button in the main navigation bar that will choose a random movie from the current page and scroll to the chosen movie and highlighting it. If on the
-Kids section then the movie will play immediately without highlighting it (this is a shortcomming of the Netflix front-end scripting).
+Kids section then the movie will play immediately without highlighting it *(this is a shortcomming of the Netflix front-end scripting)*.
 
 
 # Install
