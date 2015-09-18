@@ -1,7 +1,7 @@
 {
   "name": "randomflix",
   "version": "1.0.0",
-  "description": "RandomFlix is a Chrome extension that adds the capability to choose a random movie on Netflix.",
+  "description": "RandomFlix is a browser extension that adds the capability to choose a random movie on Netflix.",
   "private": true,
   "scripts": {
     "lint": "eslint chrome"
