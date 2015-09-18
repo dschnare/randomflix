@@ -8,7 +8,7 @@ Kids section then the movie will play immediately without highlighting it (this 
 
 # Browser Support
 
-Currently this extension only supports Chrome. To install first download or clone the repo.
+**Currently this extension only supports Chrome.** To install first download or clone the repo.
 Then open Chrome and go to `chrome://extensions` and check the checkbox next to `Developer mode`.
 Now click `Load unpacked extension...` and navigate to the `chrome` folder of the repo.
 
