@@ -1,0 +1,33 @@
+.container {
+	width: 400px;
+	padding: 30px;
+	overflow: auto;
+}
+
+.controls {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #eaeaea;
+}
+
+label {
+	font-weight: bold;
+}
+
+input[type="checkbox"] {
+	margin-top: -3px;
+	margin-right: 10px;
+}
+
+#status {
+	float: left;
+	color: #777;
+  font-style: italic;
+  line-height: 34px;
+}
+
+#save {
+	padding: 8px 12px;
+	text-transform: uppercase;
+	float: right;
+}

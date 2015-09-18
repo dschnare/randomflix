@@ -21,6 +21,8 @@
     return els;
   }
 
+
+
   function getMoviesInDom() {
     var els = getElementsByClassName('title_card');
 
@@ -78,12 +80,17 @@
     return toVideoData(movieEl);
   }
 
-  function installUi() {
+  function installUi(options) {
     var header = document.getElementById('hdPinTarget');
 
     if (!header) {
-      // On the Kids page the markup is different.
-      header = document.getElementById('hd');
+      if (options.showOnKids) {
+        // On the Kids page the markup is different.
+        header = document.getElementById('hd');
+      } else {
+        // We are not showing on Kids section.
+        return;
+      }
     }
 
     if (header) {
@@ -120,6 +127,12 @@
   // Wait for the page to settle down before we add our UI.
   // If we don't wait then there are some cases where our UI
   // is removed from the header.
-  setTimeout(installUi, 1000);
+  setTimeout(function () {
+    chrome.storage.sync.get({
+      showOnKids: false
+    }, function (options) {
+      installUi(options);
+    });
+  }, 1000);
 
 }());
